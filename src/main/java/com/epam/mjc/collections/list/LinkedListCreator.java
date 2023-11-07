@@ -8,12 +8,12 @@ public class LinkedListCreator {
 
         LinkedList<Integer> integers = new LinkedList<>();
 
-        for (int i = 1; i <= sourceList.size(); i++) {
-           if (i % 2 != 0){
-               integers.addFirst(i);
-           }else {
-               integers.addLast(i);
-           }
+        for (Integer integer : sourceList) {
+            if (integer % 2 != 0){
+                integers.addFirst(integer);
+            }else {
+                integers.addLast(integer);
+            }
         }
 
         return integers;
